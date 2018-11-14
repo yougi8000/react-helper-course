@@ -57,7 +57,9 @@ class App extends Component {
           />
         )} />
         <Route path='/cart' render={() => (
-          <CartList />
+          <CartList
+          cartList={this.state.cartBooks}
+          />
         )} />
         <Route path='/connexion' render={() => (
           <ConnexionForm />
