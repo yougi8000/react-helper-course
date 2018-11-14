@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "image": "http://bookcoverarchive.com/wp-content/uploads/2017/01/psychopath-test.jpg",
+        "title": "The Psychopath test",
+        "genre": "Non-Fiction"
+    },
+    {
+        "id": "2",
+        "image": "http://bookcoverarchive.com/wp-content/uploads/2016/12/Book-of-Strange-New-Things.jpg",
+        "title": "The Book of Strange New Things",
+        "genre": "Science Fiction"
+    },
+    {
+        "id": "3",
+        "image": "http://bookcoverarchive.com/wp-content/uploads/2016/08/SquareSpace6.jpg",
+        "title": "1000 Black Umbrellas",
+        "genre": "Poetry"
+    },
+    {
+        "id": "4",
+        "image": "http://bookcoverarchive.com/wp-content/uploads/2015/10/witches-of-america.jpg",
+        "title": "Witches of America",
+        "genre": "Non-Fiction"
+    },
+    {
+        "id": "5",
+        "image": "http://bookcoverarchive.com/wp-content/uploads/2015/10/visible-man.jpg",
+        "title": "The Visible Man: A Novel",
+        "genre": "Fiction"
+    },
+    {
+        "id": "6",
+        "image": "http://bookcoverarchive.com/wp-content/uploads/2016/03/A1Pim60eMZL.jpg",
+        "title": "The Essential Goethe",
+        "genre": "Uncategorized"
+    }
+]
