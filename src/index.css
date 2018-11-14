@@ -80,3 +80,30 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
+
+/* CART */
+/* ----------------------- */
+.cart-list {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.cart-list ul {
+    list-style: none;
+}
+
+.cart-item {
+    border-bottom: 2px solid #235d99;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-total {
+    text-align: right;
+    margin: 20px 0 0 0;
+}
