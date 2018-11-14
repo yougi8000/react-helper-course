@@ -34,3 +34,49 @@
 
 /* PRODUCT LIST */
 /* ----------------------- */
+.product-list {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* PRODUCT */
+/* ----------------------- */
+.product {
+    width: 25%;
+    min-width: 150px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    min-width: 100px;
+    margin: 10px 0;
+}
+
+.product-buttons button {
+    background: #fff;
+    width: 45px;
+    border-radius: 60px;
+    border: 2px solid #235d99;
+    color: #235d99;
+}
+
+.product-buttons button:hover {
+    color: #fff;
+    background: #235d99;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
