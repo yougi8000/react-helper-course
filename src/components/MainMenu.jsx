@@ -11,7 +11,7 @@ const MainMenu = props => {
 
             <div className='menu-connexion'>
                 <Link to='/cart'>Cart</Link>
-                <Link to='/connexion'>Hello {props.name}</Link>
+                <Link to='/connexion'>Hello {props.nameUser}</Link>
             </div>
         </nav>
     );

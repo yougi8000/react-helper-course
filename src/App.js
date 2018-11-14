@@ -15,10 +15,12 @@ class App extends Component {
     this.state = {
       books: fetchedBooks,
       cartBooks: [],
+      name: 'visitor'
     };
 
     this.addBook = this.addBook.bind(this);
     this.removeBook = this.removeBook.bind(this);
+    this.handleInputChange = this.handleInputChange.bind(this);
   }
 
   addBook(book) {
@@ -44,10 +46,16 @@ class App extends Component {
     })
   }
 
+  handleInputChange(event) {
+    this.setState({
+      name: event.target.value,
+    })
+  }
+
   render() {
     return (
       <div className="App">
-        <MainMenu name='visitor' />
+        <MainMenu nameUser={this.state.name} />
         
         <Route path='/' exact render={() => (
           <ProductList
@@ -62,7 +70,10 @@ class App extends Component {
           />
         )} />
         <Route path='/connexion' render={() => (
-          <ConnexionForm />
+          <ConnexionForm
+            value={this.state.name}
+            onChangeValue={this.handleInputChange}
+          />
         )} />
       </div>
     );
