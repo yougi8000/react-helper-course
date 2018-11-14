@@ -1,0 +1,33 @@
+/* GENERAL */
+/* ----------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* MAIN MENU */
+/* ----------------------- */
+.main-menu {
+    background: #333;
+    display: flex;
+    color: #ddd;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.main-menu a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 10px 0 0;
+}
+
+.main-menu a:hover {
+    text-decoration: underline;
+}
+
+.menu-connexion {
+    display: flex;
+}
