@@ -107,3 +107,43 @@
     text-align: right;
     margin: 20px 0 0 0;
 }
+
+/* CONNEXION FORM */
+/* ----------------------- */
+.connexion-form {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.input-connexion {
+    font-style: italic;
+    padding: 5px 10px;
+    border-radius: 60px;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+.btn-connexion {
+    background: #fff;
+    border-radius: 60px;
+    border: 2px solid #235d99;
+    color: #235d99;
+    margin: 10px auto;
+    font-size: 1em;
+    padding: 10px 20px;;
+}
+
+.btn-connexion:hover {
+    color: #fff;
+    background: #235d99;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    text-decoration: underline;
+}
