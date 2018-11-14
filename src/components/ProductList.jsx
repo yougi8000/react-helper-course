@@ -7,10 +7,9 @@ const ProductList = props => {
         <section className='product-list'>
             {props.listBooks.map(book => (
                 <Product
-                    id={book.id}
-                    title={book.title}
-                    image={book.image}
-                    genre={book.genre}
+                    oneBook={book}
+                    onClickBtnAdd={props.toAddBook}
+                    onClickBtnRemove={props.toRemoveBook}
                 />
             ))}
         </section>

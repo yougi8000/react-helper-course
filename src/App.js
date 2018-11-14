@@ -14,18 +14,46 @@ class App extends Component {
     super(props);
     this.state = {
       books: fetchedBooks,
+      cartBooks: [],
     };
+
+    this.addBook = this.addBook.bind(this);
+    this.removeBook = this.removeBook.bind(this);
+  }
+
+  addBook(book) {
+    this.state.books.map(stateBook => {
+      if (stateBook.id === book.id) {
+        this.setState(prevState => ({
+          cartBooks: [...prevState.cartBooks, book],
+        }));
+      }
+    });
+  }
+
+  removeBook(book) {
+    let nextBooksArray = [...this.state.cartBooks];
+    
+    this.state.cartBooks.map((cartBook, index) => {
+      if (cartBook.id === book.id) {
+        nextBooksArray.splice(index, 1);
+        this.setState({
+          cartBooks: nextBooksArray,
+        })
+      }
+    })
   }
 
   render() {
-    console.log(this.state.books)
     return (
       <div className="App">
         <MainMenu name='visitor' />
         
         <Route path='/' exact render={() => (
           <ProductList
-          listBooks={fetchedBooks}
+            listBooks={fetchedBooks}
+            toAddBook={this.addBook}
+            toRemoveBook={this.removeBook}
           />
         )} />
         <Route path='/cart' render={() => (
