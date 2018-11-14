@@ -1,15 +1,17 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 const MainMenu = props => {
     return (
         <nav className='main-menu'>
             <p className='menu-logo'>
-                <a href='#'>CANF</a>
+                <Link to='/'>CANF</Link>
             </p>
 
             <div className='menu-connexion'>
-                <a href='#'>Cart</a>
-                <p>| Hello {props.name}</p>
+                <Link to='/cart'>Cart</Link>
+                <Link to='/connexion'>Hello {props.name}</Link>
             </div>
         </nav>
     );

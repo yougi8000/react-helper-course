@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 
 import './App.css';
 
@@ -12,7 +13,16 @@ class App extends Component {
     return (
       <div className="App">
         <MainMenu name='visitor' />
-        <ConnexionForm />
+        
+        <Route path='/' exact render={() => (
+          <ProductList />
+        )} />
+        <Route path='/cart' render={() => (
+          <CartList />
+        )} />
+        <Route path='/connexion' render={() => (
+          <ConnexionForm />
+        )} />
       </div>
     );
   }
